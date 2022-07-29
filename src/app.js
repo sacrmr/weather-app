@@ -42,7 +42,18 @@ function showTemp(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "ca5b7f2d8535cadcd8f5264fda720408";
-let city = "Vienna";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
-axios.get(apiUrl).then(showTemp);
+function search(city) {
+  let apiKey = "ca5b7f2d8535cadcd8f5264fda720408";
+
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+
+  axios.get(apiUrl).then(showTemp);
+}
+function handleSubmit(event) {
+  event.preventDefault();
+  let searchInputElement = document.querySelector("#search-input");
+  search(searchInputElement.value);
+}
+search("Vienna");
+let form = document.querySelector("#search-bar");
+form.addEventListener("submit", handleSubmit);

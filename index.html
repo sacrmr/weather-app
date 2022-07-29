@@ -12,10 +12,26 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/2191692fcc.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container"> 
+      <form id="search-bar">
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Search City..."
+          autofocus
+          autocomplete="off"
+        />
+        <button class="search-button" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
   Last updated: <span id="date"></span>
     
   <ul class="main-info">
