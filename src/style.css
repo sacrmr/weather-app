@@ -1,0 +1,72 @@
+.container {
+  color: #ffffff;
+  background: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+  border-radius: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+}
+.date {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+}
+.main-info {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#city {
+  font-size: 30px;
+}
+#degrees {
+  font-size: 30px;
+  display: inline;
+}
+
+#units {
+  display: inline;
+  position: relative;
+  bottom: 12px;
+}
+#units :hover {
+  color: #555;
+}
+
+#celcius {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.vertical-line {
+  display: inline-block;
+  border-left: 1px solid white;
+  margin: 0 10px;
+  height: 80px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+
+#condition {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#icon-primary {
+  padding: 10px;
+}
+
+.conditions {
+  padding: 15px;
+  font-weight: 500;
+}
