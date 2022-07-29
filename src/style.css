@@ -77,19 +77,23 @@ li {
   display: inline;
 }
 
-#units {
-  display: inline;
+.units {
   position: relative;
   bottom: 12px;
-}
-#units :hover {
-  color: #555;
+  text-decoration: none;
 }
 
-#celcius {
-  text-decoration: none;
+.units .active {
   color: white;
-  font-size: 15px;
+  cursor: default;
+  text-decoration: none;
+}
+
+.noDecoration,
+a:link,
+a:visited {
+  text-decoration: none;
+  cursor: default;
 }
 
 .vertical-line {
