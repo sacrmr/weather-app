@@ -6,7 +6,7 @@
   text-align: center;
   margin: 20px auto;
   padding: 20px;
-  max-width: 600px;
+  max-width: 500px;
 }
 form {
   text-align: left;
@@ -121,4 +121,51 @@ a:visited {
 .conditions {
   padding: 15px;
   font-weight: 500;
+}
+
+.days {
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
+  list-style: none;
+  line-height: 35px;
+}
+.day {
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.day:hover {
+  background: white;
+  color: #555;
+}
+
+.icon-secondary {
+  width: 50px;
+}
+
+.info-link {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 20px;
+  text-align: right;
+  color: #ffffff;
+  padding-right: 40px;
+}
+.info-link :hover {
+  color: #555;
+}
+
+footer {
+  font-size: 14px;
+  font-weight: bold;
+  margin: auto;
+}
+
+footer .contact-coder {
+  text-decoration: none;
+  color: #ffffff;
+}
+.contact-coder :hover {
+  color: #555;
 }
