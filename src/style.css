@@ -126,16 +126,14 @@ a:visited {
 .days {
   font-size: 14px;
   text-align: center;
-  padding: 0;
+
   list-style: none;
   line-height: 35px;
-}
-.day {
   padding: 5px 15px;
   border-radius: 10px;
 }
 
-.day:hover {
+.days:hover {
   background: white;
   color: #555;
 }
