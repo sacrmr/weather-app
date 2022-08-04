@@ -19,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="container"> 
+    <div class="container" style="width: 40rem;"> 
       <form id="search-bar">
         <input
           id="search-input"
@@ -39,45 +39,38 @@
       <h1 id="city"></h1>
       <h2 id="temperature"></h2>
       <span class="units">
-      <a href="#" id="celsius" class="active">°C</a> |
-      <a href="#" id="fahrenheit" class="noDecoration">°F</a>
+      <span  id="celsius" class="active">°C</span> |
+      <span id="fahrenheit">°F</span>
       </span>
-</li>
+    </li>
 
-
-    <span class="vertical-line"></span>
+<span class="vertical-line"></span>
 
     <li class ="second-info">
      <img id= icon-primary src="" alt="">
       </br>
       <div id="condition"></div>
     </li>
-    
-   
-
   </br>
-  
     <li class ="conditions" > 
+      
     Wind: <span id="wind"></span> km/h<br />
     Humidity: <span id="humidity"></span>%
     </li>
   </ul>
 
-<div class="days" id="forecast">
+<div class="days" id="forecast"></div>
         
-</div>
-        
-      <a class="info-link" href="https://example.com">More Info</a>
-
-
-  <footer>
+    <a class="info-link" href="https://openweathermap.org/">More Info</a>
+  
+    <footer>
         <a
           href="https://github.com/sacrmr/weather-app"
           target="_blank"
           class="contact-coder"
           >Open-source code
         </a>
-        , by Samantha Cramer
+         by Samantha Cramer
       </footer>
 
 

@@ -1,12 +1,19 @@
 .container {
   color: #ffffff;
-  background: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+  background: linear-gradient(
+    to top,
+    #71299b,
+    #006ddb,
+    #00a1f5,
+    #00cdf0,
+    #0bf4db
+  );
   border-radius: 40px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin: 20px auto;
-  padding: 20px;
-  max-width: 500px;
+  padding: 30px;
+  max-width: 100%;
 }
 form {
   text-align: left;
@@ -53,7 +60,7 @@ input[type="search"]::-webkit-search-results-decoration {
   opacity: 0.3;
 }
 #date {
-  font-size: 14px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
 }
@@ -64,13 +71,16 @@ li {
 }
 
 .main-info {
-  padding: 20px;
+  padding: 40px 20px 0px;
   max-width: 100%;
   margin: 0 auto;
 }
 
 #city {
   font-size: 30px;
+  line-height: 40px;
+  margin: 0;
+  padding: 5px;
 }
 #temperature {
   font-size: 30px;
@@ -81,29 +91,21 @@ li {
   position: relative;
   bottom: 12px;
   text-decoration: none;
+  color: #6b2e9f;
+  cursor: default;
 }
 
 .units .active {
   color: white;
-  cursor: default;
   text-decoration: none;
-}
-
-.noDecoration,
-a:link,
-a:visited {
-  text-decoration: none;
-  cursor: default;
 }
 
 .vertical-line {
   display: inline-block;
   border-left: 1px solid white;
-  margin: 0 10px;
   height: 80px;
-  padding-right: 20px;
-  margin-left: 20px;
-  margin-right: 0px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 #condition {
@@ -116,14 +118,19 @@ a:visited {
 
 #icon-primary {
   width: 60px;
+  line-height: 40px;
 }
 
 .conditions {
-  padding: 15px;
+  padding: 30px;
   font-weight: 500;
 }
 
 .days {
+  margin: 20px;
+}
+
+.col-2 {
   font-size: 14px;
   text-align: center;
 
@@ -133,7 +140,7 @@ a:visited {
   border-radius: 10px;
 }
 
-.days:hover {
+.col-2:hover {
   background: white;
   color: #555;
 }
@@ -141,29 +148,32 @@ a:visited {
 .icon-secondary {
   width: 50px;
 }
-
+.forecast-min {
+  opacity: 0.7;
+  padding: 5px;
+}
+.forecast-max {
+}
 .info-link {
+  font-family: ;
   font-size: 14px;
   display: block;
-  margin-bottom: 20px;
+  margin: 20px;
   text-align: right;
-  color: #ffffff;
+  color: white;
   padding-right: 40px;
-}
-.info-link :hover {
-  color: #555;
+  text-decoration: none;
 }
 
+a:hover {
+  color: aqua !important;
+  text-decoration: none;
+}
+.contact-coder {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
 footer {
   font-size: 14px;
-  font-weight: bold;
-  margin: auto;
-}
-
-footer .contact-coder {
-  text-decoration: none;
-  color: #ffffff;
-}
-.contact-coder :hover {
-  color: #555;
 }

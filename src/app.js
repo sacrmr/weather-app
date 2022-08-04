@@ -46,13 +46,13 @@ function displayForecast(response) {
             forecastDay.weather[0].icon
           }@2x.png">
           <div class="forcast-temp">
-          <span class="forecast-min"><i class="fa-solid fa-temperature-arrow-down"></i> ${Math.round(
+          <span class="forecast-min"></i> ${Math.round(
             forecastDay.temp.min
-          )}</span>
-          </br>
+          )}°</span>
+          
           <span class="forecast-max"><i class="fa-solid fa-temperature-arrow-up"></i> ${Math.round(
             forecastDay.temp.max
-          )}</span>
+          )}°</span>
         </div>
         </div>`;
     }
@@ -65,7 +65,6 @@ function displayForecast(response) {
 function getForecast(coordinates) {
   let apiKey = "ca5b7f2d8535cadcd8f5264fda720408";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&units=metric&appid=${apiKey}`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -73,6 +72,7 @@ function showTemp(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let conditionElement = document.querySelector("#condition");
+
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
@@ -82,6 +82,7 @@ function showTemp(response) {
   temperatureElement.innerHTML = Math.round(celsiusTemp);
   cityElement.innerHTML = response.data.name;
   conditionElement.innerHTML = response.data.weather[0].description;
+
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
