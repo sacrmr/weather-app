@@ -137,6 +137,8 @@ li {
 }
 
 .icon-secondary {
+  display: block;
+  margin: 0 auto;
   width: 50px;
 }
 .forecast-min {
